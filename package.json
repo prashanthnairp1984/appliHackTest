@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "appliHackTest for hackathon",
   "scripts": {
-    "v1Test": "protractor config/testConfig.js --specs='tests/Traditional*.js'",
-    "v2Test": "protractor config/testConfig.js --specs='tests/v2*.js'"
+    "v1Tests": "protractor config/testConfig.js --specs='tests/*_V1.js'",
+    "v2Tests": "protractor config/testConfig.js --specs='tests/*_V2.js'"
   },
   "repository": {
     "type": "git",
