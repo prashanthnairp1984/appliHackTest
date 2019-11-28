@@ -4,7 +4,7 @@ var reportUtils = require('../functions/reportUtils');
 describe('Test login page elements', function() {
   it('Validate page header', function() {
     browser.waitForAngularEnabled(false);
-    browser.get('https://demo.applitools.com/hackathon.html');
+    browser.get('https://demo.applitools.com/hackathonV2.html');
     browser.getTitle().then((sPageTitle)=>{
       reportUtils(sPageTitle,"ACME demo app");
     })
@@ -49,7 +49,7 @@ describe('Test login functionality', function() {
   it('Validate empty value login', function() {
     element(by.id('log-in')).click()
     element(by.className('alert-warning')).getText().then((sAlertText)=>{
-      reportUtils(sAlertText,"Both Username and Password must be present")
+      reportUtils(sAlertText,"Please enter both username and password")
     })
   });
   it('Validate empty password login', function() {
@@ -110,7 +110,7 @@ describe('Canvas Chart Test', function() {
 describe('Dynamic Content Test', function() {
   it('Login with ad enabled', function() {
     browser.waitForAngularEnabled(false);
-    browser.get('https://demo.applitools.com/hackathon.html?showAd=true');
+    browser.get('https://demo.applitools.com/hackathonV2.html?showAd=true');
     browser.getTitle((sPageTitle) => {
       reportUtils(sPageTitle,"ACME demo app");
     }).then(()=> {

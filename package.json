@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/prashanthnairp1984/appliHackTest#readme",
   "devDependencies": {
+    "eyes.selenium": "^3.8.3",
     "jasmine-spec-reporter": "^4.2.1",
     "protractor": "^5.4.2"
   }
